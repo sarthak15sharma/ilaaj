@@ -1,0 +1,24 @@
+.aboutUs-body {
+    background-color: black;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    margin-top: 20px;
+}
+.main1 {
+    margin-left: 200px;
+}
+
+.main2 {
+    margin-left: 700px;
+}
+
+.main3 {
+    margin-left: 200px;
+}
+
+.main4 {
+    margin-left: 700px;
+}
+img{
+    margin: auto;
+}
