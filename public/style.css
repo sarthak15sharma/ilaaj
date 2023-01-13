@@ -33,11 +33,13 @@ img{
     display: inline-block;
 }
 .btn-light{
+    box-sizing: border-box;
     border: none;
     border-left: 1px solid grey;
     margin-top: 0.5px;
     background-color: white;
     height: 47px;
+    padding: 10px;
 }
 .upload-btn-wrapper input[type=file] {
     font-size: 100px;
