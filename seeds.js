@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const { Symptom, Disease } = require('./models/symptoms');
 const axios = require('axios');
 const { response } = require('express');
+const symptoms = require('./models/symptoms');
 
 async function main() {
     await mongoose.connect('mongodb://127.0.0.1:27017/ilaaj');
@@ -20,11 +21,11 @@ const seed = async () => {
             }
         });
         for(let data of res.data){
-            const symptom = new Symptom({
+            const symptom = new symptoms({
                 ID: data.ID,
                 Name: data.Name
             })
-            data.save();
+            symptom.save();
         }
     }catch(err){
         console.log(err);
@@ -32,4 +33,6 @@ const seed = async () => {
 
 }
 
-seed();
+seed().then(() => {
+    mongoose.disconnect();
+});
