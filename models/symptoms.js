@@ -7,7 +7,12 @@ const SymptomSchema = new Schema({
 });
 
 const DiseaseSchema = new Schema({
-    
-})
+    Issue: Object,
+    Specialisation: [
+        {
+            type: Object
+        }
+    ]
+});
 
-module.exports = mongoose.model('Symptom', SymptomSchema);
+module.exports = [mongoose.model('Symptom', SymptomSchema), mongoose.model('Disease', DiseaseSchema)];
