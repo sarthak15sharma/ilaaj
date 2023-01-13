@@ -8,7 +8,7 @@ async function main() {
     console.log('Database connected');
 }
 
-//main().catch(err => console.log(err));
+main().catch(err => console.log(err));
 
 const seed = async () => {
     try{
@@ -24,6 +24,7 @@ const seed = async () => {
                 ID: data.ID,
                 Name: data.Name
             })
+            data.save();
         }
     }catch(err){
         console.log(err);
