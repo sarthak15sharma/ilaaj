@@ -4,7 +4,7 @@ body{
     background-size: 1920px 1080px;
     background-attachment: fixed;
 }
-.container{
+.containerr{
     display: flex;
     justify-content: center;
 }
