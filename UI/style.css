@@ -1,0 +1,48 @@
+body{
+    background: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+    background-attachment: fixed;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+nav img{
+    margin: auto;
+    width: 140px;
+}
+img{
+    margin-top: 20px;
+    width: 300px;
+}
+.input-group{
+    width: 40rem;
+}
+
+#or{
+    padding: 30px;
+    font-size: 30px;
+    color: darkgray;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.btn-light{
+    border: none;
+    border-left: 1px solid grey;
+    margin-top: 0.5px;
+    background-color: white;
+    height: 47px;
+}
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
